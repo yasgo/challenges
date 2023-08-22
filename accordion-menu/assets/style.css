@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary: #1d1b83;
+  --secondary: #344b80;
+  --white: #fff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 230px;
+}
+
+h1 {
+  font-size: 43px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+li {
+  list-style-type: none;
+}
+
+.accordion-container {
+}
+
+.accordion-container li:first-child .accordion-title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 1px solid var(--primary);
+}
+
+.accordion-container li:last-child .accordion-title {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.accordion-container .accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--primary);
+  border-top: 0px;
+  padding: 30px;
+  transition: background-color 0.3s;
+}
+
+.accordion-container .accordion-title h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--primary);
+  transition: color 0.3s;
+}
+
+.accordion-container .accordion-title svg path {
+  transition: fill 0.3s;
+}
+
+.accordion-container .accordion-content {
+  padding: 30px;
+  padding-bottom: 60px;
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  display: none;
+}
+
+.accordion-container .accordion-content p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+.accordion-container li.active .accordion-title {
+  background-color: var(--primary);
+}
+
+.accordion-container li.active .accordion-title h3 {
+  color: var(--white);
+}
+
+.accordion-container li.active .accordion-title svg path {
+  fill: var(--white) !important;
+}
+
+.accordion-container li.active .accordion-content {
+  display: block;
+}
+
+.accordion-container li.active:last-child .accordion-title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.accordion-container li.active:last-child .accordion-content {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
