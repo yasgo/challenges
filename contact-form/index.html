@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact-form">
+        <article>
+          <h3>İletişim Formu</h3>
+          <p>
+            Formu doldurarak bize ulaşabilir ya da Google Map üzerinden
+            ofisimizi ziyarete gelebilirsiniz.
+          </p>
+        </article>
+        <div class="form-list">
+          <div class="form-element">
+            <input type="text" placeholder="Ad Soyad" />
+          </div>
+          <div class="form-element icon-mode">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13.333"
+              height="10"
+              viewBox="0 0 13.333 10"
+            >
+              <path
+                d="M1.25 64a1.25 1.25 0 0 0-.75 2.25l5.667 4.25a.836.836 0 0 0 1 0l5.667-4.25a1.25 1.25 0 0 0-.75-2.25zM0 66.917v5.417A1.668 1.668 0 0 0 1.667 74h10a1.668 1.668 0 0 0 1.667-1.667v-5.416l-5.667 4.25a1.664 1.664 0 0 1-2 0z"
+                transform="translate(0 -64)"
+                style="fill: #344b80; opacity: 0.2"
+              />
+            </svg>
+            <input type="text" placeholder="Mail" />
+          </div>
+          <div class="form-element icon-mode">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+            >
+              <path
+                d="M3.221.458a.779.779 0 0 0-.926-.453L.576.474A.784.784 0 0 0 0 1.228a8.75 8.75 0 0 0 8.75 8.75.784.784 0 0 0 .75-.578l.469-1.719a.779.779 0 0 0-.453-.926l-1.872-.779a.779.779 0 0 0-.9.227l-.789.963a6.6 6.6 0 0 1-3.143-3.139l.963-.787A.779.779 0 0 0 4 2.335L3.221.46z"
+                transform="translate(0 .023)"
+                style="fill: #344b80; opacity: 0.2"
+              />
+            </svg>
+
+            <input type="text" placeholder="Telefon" />
+          </div>
+          <div class="form-element">
+            <input type="text" placeholder="Konu" />
+          </div>
+          <div class="form-element radio-mode">
+            <div class="radio-element">
+              <input type="radio" name="sex" value="Erkek" id="male" />
+              <label for="male">
+                <span class="circle"></span>
+                Erkek
+              </label>
+            </div>
+            <div class="radio-element">
+              <input type="radio" name="sex" value="Kadın" id="female" />
+              <label for="female">
+                <span class="circle"></span>
+                Kadın
+              </label>
+            </div>
+          </div>
+          <div class="form-element select-mode">
+            <select>
+              <option disabled selected value="">Meslek</option>
+              <option value="fe">Front-End Developer</option>
+              <option value="be">Back-End Developer</option>
+              <option value="gd">Graphic Designer</option>
+            </select>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="5.833"
+              viewBox="0 0 10 5.833"
+            >
+              <path
+                d="M5 165.833a.83.83 0 0 1-.589-.244l-4.162-4.167a.833.833 0 1 1 1.178-1.178L5 163.823l3.578-3.578a.833.833 0 0 1 1.178 1.178l-4.162 4.167a.831.831 0 0 1-.594.243z"
+                transform="translate(-.005 -160)"
+                style="fill: #344b80"
+              />
+            </svg>
+          </div>
+          <div class="form-element long-mode">
+            <textarea placeholder="Mesaj"></textarea>
+          </div>
+          <button type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="9.998"
+              height="10"
+              viewBox="0 0 9.998 10"
+            >
+              <path
+                d="M9.716.106a.625.625 0 0 1 .264.609L8.73 8.838a.625.625 0 0 1-.859.48l-2.335-.97L4.2 9.795a.625.625 0 0 1-1.084-.426V7.737a.306.306 0 0 1 .084-.209l3.269-3.572a.312.312 0 0 0-.437-.443L2.06 7.042.335 6.179a.622.622 0 0 1-.345-.541.629.629 0 0 1 .31-.561l8.748-5a.627.627 0 0 1 .664.027z"
+                transform="translate(.01 .004)"
+                style="fill: #fff"
+              />
+            </svg>
+            Gönder
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
